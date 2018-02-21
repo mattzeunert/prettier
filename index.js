@@ -107,6 +107,8 @@ function formatWithCursor(text, opts, addAlignmentSize) {
     return { formatted: formattedRangeOnly };
   }
 
+  console.log("###########")
+
   let cursorOffset;
   if (opts.cursorOffset >= 0) {
     const cursorNodeAndParents = findNodeAtOffset(ast, opts.cursorOffset, opts);
